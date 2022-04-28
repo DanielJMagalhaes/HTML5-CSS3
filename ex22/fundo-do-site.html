@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text de imagem de fundo</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        height: 100vh;
+        background-color: #fff;
+        background-image: url('imagens/wallpaper002.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        /*Shorthand - background
+            color > image > position > repeat > size > attachment
+        */
+        background: #fff url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
+    }
+    header {
+        background-color: rgba(0, 0, 0, 0.475);
+        color: #fff;
+        display: block;
+        min-height: 150px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    header h1 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    nav {
+        padding: 10px;
+        background-color: black;
+    }
+    nav a {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        height: 100px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.142);
+    }
+    main {
+        margin-top: 20px;
+    }
+    section.fundo {
+        border: 2px solid black;
+        width: 70%;
+        height: 30em;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 1em;
+        border-radius: 1em;
+    }
+    section#a1 {
+        background-color: #00ffff;  
+    }
+    section#a2 {
+        background-image: linear-gradient(to bottom, #00ffff, #0800ff);
+
+    }
+    section#a3 {
+        background-image: url('imagens/pattern003.png');
+
+    }
+</style>
+<body>
+    <header>
+        <h1>Site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </header>
+    <nav>
+            <a href="home">Home</a>
+            <a href="home">Home</a>
+            <a href="home">Home</a>
+            <a href="home">Home</a>
+    </nav>
+    <main>
+        <section class="fundo" id="a1">
+            <h1>Cor normal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat accusamus ex. Illo consequatur quod, commodi distinctio, animi, earum ad soluta magnam suscipit quis laboriosam provident dolores debitis magni sapiente.</p>
+        </section>
+        <section class="fundo" id="a2">
+            <h1>Degrade</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat accusamus ex. Illo consequatur quod, commodi distinctio, animi, earum ad soluta magnam suscipit quis laboriosam provident dolores debitis magni sapiente.</p>
+        </section>
+        <section class="fundo" id="a3">
+            <h1>Imagem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat accusamus ex. Illo consequatur quod, commodi distinctio, animi, earum ad soluta magnam suscipit quis laboriosam provident dolores debitis magni sapiente.</p>
+        </section>
+    </main>
+</body>
+</html>
