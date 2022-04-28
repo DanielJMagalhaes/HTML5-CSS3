@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text de imagem de fundo</title>
+</head>
+<style>
+    body {
+        background-image: url('imagens/wallpaper001.jpg');
+    }
+    div.fundo {
+        display: inline-block;
+        border: 2px solid black;
+        width: 240px;
+        height: 240px;
+        text-align: center;
+    }
+    div#a1 {
+        background-color: #00ffff;  
+    }
+    div#a2 {
+        background-image: linear-gradient(to bottom, #0000ff, #ff0000);
+        color: #ffffff;
+    }
+    div#a3 {
+        background-image: url('imagens/pattern003.png');
+        color: #000000;
+    }
+</style>
+<body>
+    <div class="fundo" id="a1">
+        <h1>Cor normal</h1>
+    </div>
+    <div class="fundo" id="a2">
+        <h1>Degrade</h1>
+    </div>
+    <div class="fundo" id="a3">
+        <h1>Imagem</h1>
+    </div>
+</body>
+</html>
